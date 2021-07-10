@@ -12,8 +12,7 @@ int main() {
     int rand1 = rand() % 25 + 1;
     std::vector<int> vector_1;
     for (int i = 0; i < rand1; i++) {
-        int rand2 = rand();
-        vector_1.push_back(rand2);
+        vector_1.push_back(rand());
     }
     for (auto i = vector_1.cbegin(); i != vector_1.cend(); ++i) 
         std::cout << *i << " ";
